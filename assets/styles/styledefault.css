@@ -862,6 +862,10 @@ form a{
 	border: solid rgb(240, 240, 240);
 	height: fit-content;
 	width: 98.95vw;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contactpage:hover{
@@ -882,16 +886,21 @@ form a{
 }
 
 .googlemapscontainer{
+	float: center;
 	flex: wrap;
 	display: inline-block;
-	background-color: #FFFFFF;
+	background-color: #ffe0b3; /* Set the background color to light orange */
 	border: solid rgb(240, 240, 240);
 	height: fit-content;
-	width: 98.95vw;
+	align-content: center;
+	width: 100%;
 }
 
 .googlemaps{
-	width: 98vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 88vw;
+	margin: 100px;
 }
 
 /*----------Orders Page--------*/

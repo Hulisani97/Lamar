@@ -91,10 +91,205 @@ include('server/getcontact.php');
 <!------------- Website Messages----------->
 <p style="color: red; font-weight: bold; text-align: center" class="text-center"><?php if(isset($_GET['error'])){ echo $_GET['error']; }?></p>
 <p style="color: green" class="text-center"><?php if(isset($_GET['message'])){ echo $_GET['message']; }?></p>
+
+
 <!---------Contact-Page--------->
+
+<!DOCTYPE html>
+<html>
+	<style>	
+		
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: white; /* set the background color to white */
+		}
+
+		.center-heading{
+			text-align: center;
+			color: skyblue	;
+			font-weight: bold;
+			border-radius: 50%;
+			border: 3px solid lightblue;
+			padding: 10px;
+			display: inline-block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			display: table;
+			font-size: 24px;
+		}
+
+        /* CSS styles for the sections */
+        .section-container {
+            display: flex; /* Use flexbox */
+        }
+
+        .section {
+            flex: 1; /* Each section takes equal space */
+            border: 5px solid white; /* Light brown border color */
+            padding: 20px; /* Add some padding inside the sections */
+			background-color: white;
+			width: 400px;
+			height: 400px;
+        }
+
+        .section h2 {
+            font-size: 24px; /* Set the font size to 12 pixels */
+            font-family: Georgia, serif; /* Set the font family to Georgia */
+			color: gray;
+			text-align: center;
+			background-color: orange;
+        }
+
+		.section h4 {
+            font-size: 14px; /* Set the font size to 12 pixels */
+            font-family: Georgia, serif; /* Set the font family to Georgia */
+			color: gray;
+			text-align: center;
+			background-color: lightblue;
+        }
+
+		.section p {
+            font-size: 13px; /* Set the font size to 11 pixels */
+            font-family: Georgia, serif; /* Set the font family to Georgia */
+			color: gray;
+			margin-bottom: 10px;	
+			text-align: center;
+			margin-top: 10px;	
+        }
+
+		.section p1 {
+            font-size: 14px; /* Set the font size to 11 pixels */
+            font-family: Georgia, serif; /* Set the font family to Georgia */
+			color: gray;
+			margin-bottom: 10px;	
+			text-align: center;
+			margin-top: 10px;	
+        }
+
+		/* CSS styles for hyperlinks */
+        a {
+            color: darkblue; /* Dark red color for hyperlinks */
+            text-decoration: none; /* Underline the hyperlinks */
+        }
+
+        a:hover {
+			background-color: #f2f2f2;
+      		padding: 5px 10px;
+      		text-decoration: underline;
+            color: #CD0000; /* Darker red color on hover */
+        }
+	
+	
+		form {
+			width: 300px;
+			margin: 0 auto;
+			background-color: #f0f8ff; /* light blue background */
+    		padding: 20px; /* add some padding */
+    		border-radius: 5px; /* rounded corners */
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 8px;
+			font-size: 14px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		textarea {
+			height: 120px;
+		}
+
+		input[type="submit"] {
+			display: block;
+			width: 100%;
+			margin-top: 10px;
+			padding: 8px;
+			font-size: 14px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+    </style>
+
 <section>
-    <h3>Contact Us</h3>
-    <hr class="mx-auto">
+    <h3 class="center-heading">Contact Us</h3>	
+
+
+    <div class="section-container">
+        <div id="section1" class="section">
+            <h2>Sellers Market</h2>
+            <p>This is our market plartform wherein you get to submit the products you want to sell. We basically screen it and value it for others to purchase.
+			We might take some time to respond on your uploaded goods as we get a lot of products from sellers daily. 
+			A well as a lot of reviews and comment on the values permitted on each product by out marketiong Experts.</p>
+            <p><a href="https://poe.com/">Sellers_Market</a>.</p>
+        </div>
+
+		<div id="section1" class="section">
+            <h2>Collections and returns</h2>
+            <p> We grace you with points of pickups and returns at any specified working hours depending on the point of reference. 
+			Our Points are located in the Sandton Region which is the main offices for our organization.
+			We can refer your pickup or collection accoreding to your current location and we can base them from the following points which are our storage locations :</p>
+			
+			<p></p>
+			<h4>SOWETO</h4>
+			<p1> <li>Weekdays (Working Hours) - 08h00-17h00</li>
+			<li>Weekends (Working Hours) - 07h45-14h00</li>
+			<li>Holidays (Working Hours) - Closed</li></p1>
+			
+			<p></p>
+			<h4>KRUGERSDORP</h4>
+			<p1> <li>Weekdays (Working Hours) - 08h00-17h00</li>
+			<li>Weekends (Working Hours) - 07h45-14h00</li>
+			<li>Holidays (Working Hours) - Closed</li></p1>
+			
+			<p></p>
+			<h4>HARTFIELD</h4>
+			<p1> <li>Weekdays (Working Hours) - 08h00-17h00</li>
+			<li>Weekends (Working Hours) - 07h45-14h00</li>
+			<li>Holidays (Working Hours) - Closed</li></p1>
+			
+            <p><a href="https://poe.com/">More info.</a>.</p>
+        </div>
+
+        <div id="section2" class="section">
+            <h2>Offices</h2>
+            <p>For face to face queries and site visit we have two main offices which operate in prescribed business hours.</p>
+			<p>They are situated in the following parts of the country: </p>
+			
+			<p></p>
+			<h4>SOWETO</h4>
+			<p1> <li>Weekdays (Working Hours) - 08h00-16h00</li>
+			<li>Weekends (Working Hours) - 08h00-13h00</li>
+			<li>Holidays (Working Hours) - 09h00-14h00</li></p1>
+			
+			<p></p>
+			<h4>KRUGERSDORP</h4>
+			<p1> <li>Weekdays (Working Hours) - 24/7</li>
+			<li>Weekends (Working Hours) - 08h00-16h00</li>
+			<li>Holidays (Working Hours) - 08h00-16h00</li></p1>
+
+			<p><a href="https://poe.com/">Active Teams</a>.</p>
+		</div>
+    </div>
+</html>
+
+</section>
+
+<section>
+	<hr class="mx-auto">
     <div class="contactpagecontainer">
       <div class="googlemapscontainer">
         <iframe class="googlemaps" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=4708%20Mhunti%20Street%20Johannesburg+(MR)&amp;t=p&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
@@ -105,16 +300,21 @@ include('server/getcontact.php');
       </div>
       <div class="contactpage">
         <p>Send Any Queries And We Will be In Touch Soon.</p><br>
-        <form  action="contact.php" method="POST" enctype="multipart/form-data">
-          Your name:<br>
-          <input name="fldname" type="text" value="" size="30" required/><br>
-          Your email:<br>
-          <input name="fldemail" type="text" value="" size="30" required/><br>
-          Your message:<br>
-          <textarea name="fldmessage" rows="7" cols="30"></textarea><br>
-          <input class="submitcontactformbtn" type="submit" value="Send Messsage" name="submitcontactformbtn"/>
-        </form><br><br>
-      </div>
+		
+		<form action="contact.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea>
+
+		<input type="submit" value="Submit">
+		</form><br><br>
+    
+	</div>
     </div>
   </div>
 </section>
