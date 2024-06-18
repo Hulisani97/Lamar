@@ -853,6 +853,7 @@ form a{
 /*----------Contact Page--------*/
 .contactpagecontainer{
 	text-align: center;
+	background-color: white;
 }
 
 .contactpage{
@@ -869,7 +870,7 @@ form a{
 }
 
 .contactpage:hover{
-	border: solid rgb(182, 182, 182);
+	border: solid white;
 }
 
 .submitcontactformbtn{
@@ -889,18 +890,25 @@ form a{
 	float: center;
 	flex: wrap;
 	display: inline-block;
-	background-color: #ffe0b3; /* Set the background color to light orange */
-	border: solid rgb(240, 240, 240);
-	height: fit-content;
+	background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+	border: 0 solid white;
+	box-sizing: border-box;
 	align-content: center;
 	width: 100%;
+	padding: 0;
+	border-radius: 0;
 }
 
 .googlemaps{
-	margin-top: auto;
-	margin-bottom: auto;
-	width: 88vw;
+	margin-top: 0;
+	margin-bottom: 0;
+	border:5px orange;
+	border-radius: 15px;
 	margin: 100px;
+	width: 80vw;
+	height: 600px;
+	background-color: white;
+	align-content: center;
 }
 
 /*----------Orders Page--------*/
@@ -1006,6 +1014,7 @@ form a{
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
+	background-color: white;
 }
 
 .voicerecognitionhelpcommandlist {
@@ -1193,25 +1202,24 @@ width: 60vw;
 
 #voicerecognitionbtn:hover{
 	max-width: 23%;
-	max-height: 33%;
-}
-/*---------- Products Page --------*/
-
+	lightsalmo501ight: 33%;black
+/*
 /*---------- Track Order Page --------*/
 .realtimetrackingstatuscontainer input{
-	margin-left: 40px;
-}
-}
+	box-sizing: border-box;
+	border-color: ora25pxge;margin-left:
+	 415000
 
-/*-------media query for less than 450 screen size----*/
-@media only screen and (max-width: 450px){
-/*---------- Product Details Page --------*/
-.reviewdisplaycontainer{
-font-size: x-small;
-}
-}
+/*30-----media query for less than 450 screen size----*/
+@media0y screen and (max-width: 450px){
+/*-------0P
+border: orange;
+border15pxadius: 5%;roduct Details Page --------*/
+.reviewd100pxaycontainerautot
+width: 8888v600px
 
-/*-------media query for less than 400 screen size----*/
+/*-------
+align-content: center;media query for less than 400 screen size----*/
 @media only screen and (max-width: 400px){
 .col-2{
 	flex-basis: 50%;
